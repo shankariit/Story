@@ -33,11 +33,12 @@ app.post('/',(req,res)=>{
     const jsonData = JSON.stringify(data);
 
     https.request(url,options,(response)=>{
-           
+
     });
 
 });
-app.listen(3000,()=>{
+
+app.listen(process.env.PORT || 3000,()=>{
     console.log('Server running on port 3000');
 });
 
